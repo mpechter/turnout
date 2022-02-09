@@ -59,16 +59,5 @@ def absolute_plot():
 
     plt.show()
 
-def texas_montana():
-
-    df = pd.DataFrame({ 'Year':['2016','2020'], 'Texas':[8975000,11350000], 'Montana':[516901,612075]})
-    df = df[["Year","Texas","Montana"]]
-    df.set_index(["Year"],inplace=True)
-    df.plot(kind='bar',rot=0)
-    plt.xlabel("")
-    plt.show()
-
-#texas_montana()
-
-#relative_plot()
+relative_plot()
 absolute_plot()
